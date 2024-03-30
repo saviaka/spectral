@@ -1,0 +1,12 @@
+// SPDX-License-Identifier: MIT
+// Generated with Spectral Syntax
+
+pragma solidity ^0.8.0;
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+
+contract AIMemecoin is ERC20 {
+    constructor() ERC20("aimemecoin", "AIMC") {
+        _mint(msg.sender, 100_000_000 * 10 ** decimals());
+    }
+}
